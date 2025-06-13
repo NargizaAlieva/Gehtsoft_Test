@@ -15,13 +15,13 @@ public class Inputs {
         System.out.println("1 - Console input");
         System.out.println("2 - File input");
         System.out.print("Enter your choice: ");
-        int choice = scanner.nextInt();
+        String choice = scanner.next();
         scanner.nextLine();
 
-        if (choice == 1) {
+        if (choice.equals("1")) {
             System.out.print("\nEnter text: ");
             return scanner.nextLine();
-        } else if (choice == 2) {
+        } else if (choice.equals("2")) {
             System.out.print("Enter file path: ");
             String path = scanner.nextLine();
             try {
